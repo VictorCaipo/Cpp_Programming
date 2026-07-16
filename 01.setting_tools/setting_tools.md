@@ -1,6 +1,6 @@
 ### ***1. Setting tools***
 
-- Here I am going to work with Gcc and Linux.
+- I am going to work with Gcc (compiler) and Linux (OS).
 - Compilation instructions vary depending on which compiler are you working with. However, most of them follow this pattern:
 
 > tool_name [optional flags] source_name.cpp -o output_name
@@ -12,6 +12,7 @@
 appear on the way. 
 
 ```cpp
+//New way to print out messages
 #include <print>
 
 int main(){
@@ -22,4 +23,15 @@ int main(){
     //if a troubleshooting appear is probably because <print>
 
 }
+//Old way to print out messages
+#include <iostream>
+
+int main(){
+    std::out << "Come back Alejandra" ;
+}
+
 ```
+- Regarding println, as any function it has a return type and parentheses, along with a name.
+- The main function is special, it wlil return a 0 by default and you can only have one main function in your program.
+- std indicates the standart namespace.
+- "::" is the scope-resolution operator.
